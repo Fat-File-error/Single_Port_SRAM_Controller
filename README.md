@@ -59,4 +59,5 @@ Single_Port_SRAM_Controller/
 ## Author
 
 Fat-File-error
-Fatema Kapadia
+
+## Fatema Kapadia
