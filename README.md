@@ -31,8 +31,10 @@ Single_Port_SRAM_Controller/
 ## Current Progress
 
 - [x] SRAM memory module
-- [ ] SRAM controller FSM
-- [ ] Controller-SRAM integration
+- [x] controller interface definition
+- [x] SRAM instantiation inside the controller
+- [ ] FSM state implementation
+- [ ] read transaction & write transaction logic
 - [ ] Testbench development
 - [ ] Verification and waveform analysis
 
