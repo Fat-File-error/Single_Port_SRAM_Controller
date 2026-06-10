@@ -33,7 +33,7 @@ Single_Port_SRAM_Controller/
 - [x] SRAM memory module
 - [x] controller interface definition
 - [x] SRAM instantiation inside the controller
-- [ ] FSM state implementation
+- [x] FSM state implementation
 - [ ] read transaction & write transaction logic
 - [ ] Testbench development
 - [ ] Verification and waveform analysis
