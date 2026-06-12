@@ -75,3 +75,45 @@ parameter IDLE  = 2'b00;
     endcase
           
   end
+
+   always @(*)  begin
+    we = 0 ;
+    re = 0;
+    
+    ready = 0;
+    error = 0;
+    busy = 0; 
+    
+    addr_to_sram = 0;
+    wdata_to_sram = 0;
+    
+    case (state)
+      default: begin
+    		error = 1'b1;
+			end
+      
+      IDLE : begin
+      end
+      
+      READ :
+        begin
+          re = 1;
+          busy = 1;
+          addr_to_sram = addr;
+        end
+      
+      WRITE :
+        begin
+          we = 1;
+          busy = 1;
+          wdata_to_sram = wdata;
+          addr_to_sram = addr;
+        end
+    
+      DONE:
+        begin
+          ready = 1;
+          rdata = rdata_from_sram ;
+        end
+    endcase
+    endmodule

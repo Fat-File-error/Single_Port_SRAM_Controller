@@ -34,9 +34,15 @@ Single_Port_SRAM_Controller/
 - [x] controller interface definition
 - [x] SRAM instantiation inside the controller
 - [x] FSM state implementation
-- [ ] read transaction & write transaction logic
+- [x] read transaction & write transaction logic
 - [ ] Testbench development
 - [ ] Verification and waveform analysis
+
+## Project Status
+
+The RTL design of the Single-Port SRAM Controller has been implemented, including the SRAM memory model, FSM-based controller, state transition logic, and read/write control paths.
+
+The next phase focuses on verification through a dedicated testbench and waveform analysis.
 
 ## SRAM Specifications
 
