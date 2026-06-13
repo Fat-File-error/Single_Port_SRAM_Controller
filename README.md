@@ -35,14 +35,16 @@ Single_Port_SRAM_Controller/
 - [x] SRAM instantiation inside the controller
 - [x] FSM state implementation
 - [x] read transaction & write transaction logic
-- [ ] Testbench development
+- [x] Testbench initialization
 - [ ] Verification and waveform analysis
 
 ## Project Status
 
 The RTL design of the Single-Port SRAM Controller has been implemented, including the SRAM memory model, FSM-based controller, state transition logic, and read/write control paths.
 
-The next phase focuses on verification through a dedicated testbench and waveform analysis.
+# Verification Progress
+
+A Verilog testbench has been created for the SRAM controller. The DUT (Device Under Test) is instantiated, clock generation is implemented, and reset logic has been added. The next step is to verify write and read transactions and analyze simulation waveform
 
 ## SRAM Specifications
 
