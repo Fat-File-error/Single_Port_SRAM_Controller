@@ -68,6 +68,4 @@ A Verilog testbench has been created for the SRAM controller. The DUT (Device Un
 
 ## Author
 
-Fat-File-error
-
-## Fatema Kapadia
+Fatema Kapadia
