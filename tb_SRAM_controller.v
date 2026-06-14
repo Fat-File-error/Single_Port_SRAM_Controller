@@ -44,3 +44,15 @@ module SRAM_controller_tb;
     #10
     rst = 0;
     
+    addr = 8'd10 ;
+    wdata = 8'hAA ;
+    
+    #10;
+    wr_req = 1 ;
+    
+    #20;
+    addr = 8'd10 ;
+    rd_req = 1;
+    
+    #10;
+    rd_req = 0;
