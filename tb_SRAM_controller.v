@@ -49,6 +49,9 @@ module SRAM_controller_tb;
     
     #10;
     wr_req = 1 ;
+
+    #10;
+    wr_req = 0 ;
     
     #20;
     addr = 8'd10 ;
@@ -56,3 +59,8 @@ module SRAM_controller_tb;
     
     #10;
     rd_req = 0;
+
+    #20;
+    $finish;
+    end
+endmodule
