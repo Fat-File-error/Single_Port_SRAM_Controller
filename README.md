@@ -65,6 +65,25 @@ Clock generation is implemented using a 10 ns clock period.
 | Read Type     | Synchronous      |
 | Write Type    | Synchronous      |
 
+## Simulation Results
+
+The SRAM controller was successfully verified using a Verilog testbench.
+
+### Test Sequence
+
+1. Reset the controller.
+2. Write data `0xAA` to address `10`.
+3. Issue a read request for address `10`.
+4. Verify that the read data matches the written data.
+
+### Simulation Output
+
+| Address | Written Data | Read Data | Status |
+| ------- | ------------ | --------- | ------ |
+| 10      | 0xAA         | 0xAA      | PASS   |
+
+The controller correctly asserted the `busy` and `ready` signals during operation, and no error conditions were observed.
+
 ## Learning Objectives
 
 - Verilog HDL
