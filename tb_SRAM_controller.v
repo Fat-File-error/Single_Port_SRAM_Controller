@@ -63,4 +63,9 @@ module SRAM_controller_tb;
     #20;
     $finish;
     end
+
+    initial 
+    begin
+      $monitor("time=%0t addr=%d wdata=%h rdata=%h wr_req=%b rd_req=%b 		ready=%b busy=%b error=%b",$time, addr, wdata, rdata, wr_req, rd_req, ready, busy, error);
+	  end
 endmodule
